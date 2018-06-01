@@ -1,0 +1,70 @@
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<ol class="breadcrumb">
+	  <li><a href="users/web/index.phtml#/home">Home</a></li>
+	  <li><b>Update user</b></li>
+	</ol>
+
+	<div class="row">
+		<div class="col-md-4"></div>
+		
+		<div class="col-md-4">
+			<form class="form" ng-submit="update()">
+						
+				<label for="name" class="">Name</label> 
+				<input ng-model="user.name" type="text"  name="name" id="name" class="form-control">
+			
+				<label for="birdyday" class=""> BirdyDay</label> 
+				<input ng-model="user.date" type="text"  name="data" id="date" class="form-control">
+				
+
+				<label for="andess" class="">Andress</label> 
+					
+				<div class="row">				
+					<div class="col-md-10">
+						<input ng-model="andress" type="text"  name="andess" id="andess" class="form-control">
+					</div>
+					<div class="col-md-1">
+						<a ng-click="addAndress()" class="btn btn-primary">+</a>	
+					</div>							
+				</div>
+				
+				<div ng-repeat="andress in user.andresses">
+					<div class="row">
+						<div class="col-md-10">
+							<p >Andress :  {{andress}} </p>		
+						</div>
+						<div class="col-md-2">
+							<a class="btn" ng-click="removeAndress(andress)"> X </a>
+						</div>
+					</div>
+					  	
+				</div>
+
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-3">								
+						<button type="submit" class="btn btn-primary" ng-disabled="formulario.$invalid">Salvar</button>
+					</div>
+					<div class="col-md-3">
+						<button type="reset" class="btn btn-primary">Limpar</button>
+					</div>
+				</div>			
+			</form>
+		</div>
+	</div>
+</div>

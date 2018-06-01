@@ -1,0 +1,17 @@
+{
+	"name": "projecName",
+    "description": "Projeto base PHP",
+    "keywords": ["microframework", "rest", "router", "psr7"],
+    "authors": [
+        {
+            "name": "Francisco Carlos Moraes Junior",
+            "email": "moraes.junior6@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17"
+    }
+}

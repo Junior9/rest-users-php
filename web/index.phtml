@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="pt-br"  ng-app="main-user">
+
+    <head>
+        <base href="/"></base>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width"></meta>
+        <title>Users</title>
+
+        <link rel="stylesheet" href="/users/web/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="/users/web/css/bootstrap-theme.min.css"></link>
+
+        <script src="/users/web/js/lib/angular.min.js"></script>  
+        <script src="/users/web/js/lib/angular-animate.min.js"></script>
+        <script src="/users/web/js/lib/angular-route.min.js"></script>
+        <script src="/users/web/js/lib/angular-resource.min.js"></script>
+        <script src="/users/web/js/lib/jquery-3.2.1.min.js"></script>   
+        <script src="/users/web/js/lib/bootstrap.min.js"></script>
+
+        <script src="/users/web/js/main.js"></script> 
+        <script src="/users/web/js/controller/user-controller.js"></script>
+        <script src="/users/web/js/controller/user-update-controller.js"></script>
+        <script src="/users/web/js/service/user-service.js"></script>
+
+    </head>
+   
+     <body>
+        <div class="container">
+            <ng-view></ng-view>
+        </div>               
+    </body>
+
+</html>
